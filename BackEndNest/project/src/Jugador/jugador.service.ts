@@ -178,7 +178,7 @@ export class JugadorService {
         return await this.jugadorRepository.find({where: {equipoId: equipoID}});
     }
 
-    async traerIngredientePorId(idJugador): Promise<JugadorEntity[]> {
+    async traerJugadorPorId(idJugador): Promise<JugadorEntity[]> {
         return await this.jugadorRepository.find({where: {id: idJugador}});
     }
 

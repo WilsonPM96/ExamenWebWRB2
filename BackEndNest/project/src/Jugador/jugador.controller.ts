@@ -39,7 +39,7 @@ export class JugadorController {
         @Param() paramParams,
         @Res() response
     ) {
-        const jugador = await this._jugadorService.traerIngredientePorId(paramParams.idJugador);
+        const jugador = await this._jugadorService.traerJugadorPorId(paramParams.idJugador);
         return response.send(jugador);
     }
 
